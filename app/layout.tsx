@@ -3,6 +3,7 @@ import { Inter } from "next/font/google"
 import { Suspense } from "react"
 
 import "./globals.css"
+import { ImportantNotice } from "@/components/layout/important-notice"
 import { Navbar } from "@/components/layout/navbar"
 import { cn } from "@/lib/utils"
 import { siteConfig } from "@/lib/site-nav"
@@ -56,6 +57,7 @@ export default function RootLayout({
       <body>
         <Navbar />
         <main className="min-h-screen">{children}</main>
+        <ImportantNotice />
         <Suspense fallback={<footer className="min-h-40 bg-ink" aria-hidden />}>
           <DeferredFooter />
         </Suspense>
