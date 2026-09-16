@@ -3,6 +3,7 @@ import { Inter } from "next/font/google"
 import { Suspense } from "react"
 
 import "./globals.css"
+import { FinancePopup } from "@/components/finance/finance-popup"
 import { ImportantNotice } from "@/components/layout/important-notice"
 import { Navbar } from "@/components/layout/navbar"
 import { cn } from "@/lib/utils"
@@ -61,6 +62,7 @@ export default function RootLayout({
         <Suspense fallback={<footer className="min-h-40 bg-ink" aria-hidden />}>
           <DeferredFooter />
         </Suspense>
+        <FinancePopup />
       </body>
     </html>
   )
