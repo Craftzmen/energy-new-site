@@ -3,8 +3,6 @@ import { Inter } from "next/font/google"
 import { Suspense } from "react"
 
 import "./globals.css"
-import { FinancePopup } from "@/components/finance/finance-popup"
-import { CallNowBar } from "@/components/layout/call-now-bar"
 import { ImportantNotice } from "@/components/layout/important-notice"
 import { Navbar } from "@/components/layout/navbar"
 import { cn } from "@/lib/utils"
@@ -58,13 +56,11 @@ export default function RootLayout({
     <html lang="en" className={cn("antialiased", inter.variable, "font-sans")}>
       <body>
         <Navbar />
-        <main className="min-h-screen pb-28">{children}</main>
+        <main className="min-h-screen">{children}</main>
         <ImportantNotice />
         <Suspense fallback={<footer className="min-h-40 bg-ink" aria-hidden />}>
           <DeferredFooter />
         </Suspense>
-        <FinancePopup />
-        <CallNowBar />
       </body>
     </html>
   )
