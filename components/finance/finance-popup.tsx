@@ -36,7 +36,7 @@ export function FinancePopup() {
         <a
           href={financeContact.phoneHref}
           title={`Call ${financeContact.phoneDisplay}`}
-          className="relative flex size-full min-h-14 min-w-14 items-center justify-center rounded-full bg-signal text-ink shadow-lg transition-transform hover:scale-105 active:scale-95 sm:min-h-16 sm:min-w-16"
+          className="relative flex size-full min-h-14 min-w-14 items-center justify-center rounded-full bg-emerald-500 text-white shadow-[0_4px_24px_rgba(16,185,129,0.55)] ring-2 ring-emerald-300/50 transition-transform hover:scale-105 hover:bg-emerald-400 active:scale-95 sm:min-h-16 sm:min-w-16"
         >
           <Phone className="size-6 sm:size-7" aria-hidden />
           <span className="absolute right-0 top-0 flex size-4 sm:size-5">
@@ -79,7 +79,7 @@ export function FinancePopup() {
             <div className="grid gap-2 sm:gap-2.5">
               <div className="group flex items-center justify-between rounded-sm border border-white/5 bg-white/[0.04] p-2.5 transition-all hover:bg-white/[0.07] sm:p-3.5">
                 <div className="flex items-center gap-2.5 sm:gap-3.5">
-                  <div className="flex size-8 items-center justify-center rounded-sm bg-signal/15 text-signal sm:size-9">
+                  <div className="flex size-8 items-center justify-center rounded-sm bg-emerald-500/15 text-emerald-400 sm:size-9">
                     <Zap className="size-4 sm:size-[18px]" aria-hidden />
                   </div>
                   <span className="text-[11px] font-bold uppercase tracking-wide text-white/90 sm:text-xs">
@@ -87,14 +87,14 @@ export function FinancePopup() {
                   </span>
                 </div>
                 <ChevronRight
-                  className="size-3.5 text-white/20 transition-all group-hover:translate-x-0.5 group-hover:text-signal sm:size-4"
+                  className="size-3.5 text-white/20 transition-all group-hover:translate-x-0.5 group-hover:text-emerald-400 sm:size-4"
                   aria-hidden
                 />
               </div>
 
               <div className="group flex items-center justify-between rounded-sm border border-white/5 bg-white/[0.04] p-2.5 transition-all hover:bg-white/[0.07] sm:p-3.5">
                 <div className="flex items-center gap-2.5 sm:gap-3.5">
-                  <div className="flex size-8 items-center justify-center rounded-sm bg-signal/15 text-signal sm:size-9">
+                  <div className="flex size-8 items-center justify-center rounded-sm bg-emerald-500/15 text-emerald-400 sm:size-9">
                     <CreditCard className="size-4 sm:size-[18px]" aria-hidden />
                   </div>
                   <span className="text-[11px] font-bold uppercase tracking-wide text-white/90 sm:text-xs">
@@ -102,26 +102,26 @@ export function FinancePopup() {
                   </span>
                 </div>
                 <ChevronRight
-                  className="size-3.5 text-white/20 transition-all group-hover:translate-x-0.5 group-hover:text-signal sm:size-4"
+                  className="size-3.5 text-white/20 transition-all group-hover:translate-x-0.5 group-hover:text-emerald-400 sm:size-4"
                   aria-hidden
                 />
               </div>
             </div>
 
             <div className="group relative pt-0.5 sm:pt-1">
-              <div className="absolute -inset-1 rounded-sm bg-gradient-to-r from-signal to-signal-dark opacity-20 blur-md transition duration-700 group-hover:opacity-50" />
+              <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-emerald-500 to-emerald-600 opacity-30 blur-md transition duration-700 group-hover:opacity-60" />
               <a
                 href={financeContact.phoneHref}
                 title={`Call ${financeContact.phoneDisplay}`}
-                className="relative flex min-h-11 w-full flex-col items-center justify-center rounded-sm bg-signal px-4 py-3 transition-all hover:scale-[1.02] hover:bg-signal-light active:scale-[0.98] sm:px-6 sm:py-4"
+                className="relative flex min-h-11 w-full flex-col items-center justify-center rounded-full bg-emerald-500 px-4 py-3 text-white shadow-[0_4px_28px_rgba(16,185,129,0.45)] ring-2 ring-emerald-300/40 transition-all hover:scale-[1.02] hover:bg-emerald-400 active:scale-[0.98] sm:px-6 sm:py-4"
               >
                 <div className="flex items-center gap-2.5 sm:gap-3.5">
-                  <span className="text-xl font-black tracking-tighter text-ink sm:text-2xl">
+                  <span className="text-xl font-black tracking-tighter sm:text-2xl">
                     {financeContact.phoneDisplay}
                   </span>
-                  <Phone className="size-5 animate-pulse text-ink sm:size-6" aria-hidden />
+                  <Phone className="size-5 animate-pulse sm:size-6" aria-hidden />
                 </div>
-                <p className="mt-1 text-[8px] font-black uppercase tracking-[0.4em] text-ink/50 sm:text-[9px]">
+                <p className="mt-1 text-[8px] font-black uppercase tracking-[0.4em] text-emerald-100 sm:text-[9px]">
                   Call Right Now
                 </p>
               </a>
