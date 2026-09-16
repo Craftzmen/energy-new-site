@@ -23,7 +23,7 @@ export function FinancePopup() {
       role="complementary"
       aria-label="Plan assistance"
       className={cn(
-        "fixed bottom-4 right-4 z-[550] flex max-h-[calc(100vh-32px)] flex-col overflow-hidden border border-white/10 shadow-[0_30px_70px_rgba(0,0,0,0.55)] transition-[width,height,border-radius,transform] duration-300 ease-out sm:bottom-6 sm:right-6",
+        "fixed bottom-[5.75rem] right-4 z-[550] flex max-h-[calc(100vh-7rem)] flex-col overflow-hidden border border-white/10 shadow-[0_30px_70px_rgba(0,0,0,0.55)] transition-[width,height,border-radius,transform] duration-300 ease-out sm:bottom-[6.25rem] sm:right-6",
         isMinimized
           ? "size-14 rounded-full p-0 sm:size-16"
           : cn(
